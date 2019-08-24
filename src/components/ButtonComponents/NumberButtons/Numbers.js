@@ -13,7 +13,7 @@ import NumberButton from "./NumberButton";
   return (
     <div>
     {numberState.map((item) => { 
-    	return <NumberButton className = "NumberButton" item={item}/>
+    	return <NumberButton className = "button" item={item}/>
 
     })}
 

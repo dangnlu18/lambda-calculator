@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom"; 
 import "./App.css";
-import {numbers, operators} from "./data";
+import {numbers, operators, specials} from "./data";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
+import Display from "./components/DisplayComponents/Display"
+
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -27,8 +30,11 @@ function App() {
       <div className="App">
 
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+
+        <Display />
         <Numbers />
         <Operators />
+        <Specials />
       </div>
     </div>
   );
