@@ -17,13 +17,75 @@ html{
 }
 
 .container{
+	width: 50%;
+	height: 330px;
 	background-color: red;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 10px;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+
+.logo-container img {
+	display: flex;
+	height: 25px;
+	align-items: flex-start;
+}
+
+.Display {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 186px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
 }
 
 .button {
-	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	align-items: center;
+	margin: 3px;
+
 }
+
+.middle{
+	display: flex;
+	flex-flow: row;
+	margin: 0;
+}
+
+.center{
+	width: 140px;
+}
+
+.specials{
+	width: 140px;
+}
+
+.numbers{
+	width: 140px;
+	flex-wrap: row;
+}
+
+.operators{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+

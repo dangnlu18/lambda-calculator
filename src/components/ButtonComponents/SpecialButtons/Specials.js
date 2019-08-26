@@ -11,9 +11,9 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div>
-    	{specialState.map((spec) => {
-    		return <SpecialButton className= "button" item={spec}/>
+    <div className="specials">
+    	{specialState.map((spec, index) => {
+    		return <SpecialButton key={index} className= "button" item={spec}/>
     	})}
 
 

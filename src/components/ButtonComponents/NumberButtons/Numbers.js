@@ -11,9 +11,9 @@ import NumberButton from "./NumberButton";
 	const [numberState, setNumberState] = useState(numbers)
   // STEP 2 - add the imported data to state
   return (
-    <div>
-    {numberState.map((item) => { 
-    	return <NumberButton className = "button" item={item}/>
+    <div className="numbers">
+    {numberState.map((item, index) => { 
+    	return <NumberButton key= {index}className = "button" item={item}/>
 
     })}
 
